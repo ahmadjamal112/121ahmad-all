@@ -1,0 +1,179 @@
+Array Methods we studied today, Kal String Methods prhngy
+
+1. Flat()
+2. Slice()
+3. Splice()
+4. Shift()
+5. Unshift()
+6. Sort()
+7. Include()
+8. Join()
+9. Pop()
+10. Push()
+11. At()
+12. IndexOf()
+13. ToString()
+14. Reverse()
+15.length
+Sure! Here's a brief explanation of each **Array Method** along with examples:
+
+---
+
+### **1. `flat()`**
+👉 Converts a nested array into a single-level array.
+
+```js
+let arr = [1, [2, [3, 4]], 5];
+console.log(arr.flat(2)); // [1, 2, 3, 4, 5]
+```
+
+---
+
+### **2. `slice(start, end)`**
+👉 Returns a portion of the array without modifying the original array.
+
+```js
+let arr = [10, 20, 30, 40, 50];
+console.log(arr.slice(1, 3)); // [20, 30]
+console.log(arr); // [10, 20, 30, 40, 50] (unchanged)
+```
+
+---
+
+### **3. `splice(start, deleteCount, item1, item2, ...)`**
+👉 Modifies the array by adding/removing elements.
+
+```js
+let arr = [10, 20, 30, 40];
+arr.splice(2, 1, 100); // Removes 30, inserts 100
+console.log(arr); // [10, 20, 100, 40]
+```
+
+---
+
+### **4. `shift()`**
+👉 Removes the first element and returns it.
+
+```js
+let arr = [1, 2, 3];
+console.log(arr.shift()); // 1
+console.log(arr); // [2, 3]
+```
+
+---
+
+### **5. `unshift(element1, element2, ...)`**
+👉 Adds elements to the beginning of the array.
+
+```js
+let arr = [2, 3];
+arr.unshift(1);
+console.log(arr); // [1, 2, 3]
+```
+
+---
+
+### **6. `sort()`**
+👉 Sorts an array alphabetically or numerically (default is string-based).
+
+```js
+let arr = [30, 5, 100, 1];
+console.log(arr.sort((a, b) => a - b)); // [1, 5, 30, 100]
+```
+
+---
+
+### **7. `includes(value)`**
+👉 Checks if an element exists in an array.
+
+```js
+let arr = [10, 20, 30];
+console.log(arr.includes(20)); // true
+console.log(arr.includes(40)); // false
+```
+
+---
+
+### **8. `join(separator)`**
+👉 Converts an array into a string with a separator.
+
+```js
+let arr = ["Hello", "World"];
+console.log(arr.join(" ")); // "Hello World"
+```
+
+---
+
+### **9. `pop()`**
+👉 Removes and returns the last element.
+
+```js
+let arr = [1, 2, 3];
+console.log(arr.pop()); // 3
+console.log(arr); // [1, 2]
+```
+
+---
+
+### **10. `push(value1, value2, ...)`**
+👉 Adds elements to the end of an array.
+
+```js
+let arr = [1, 2];
+arr.push(3);
+console.log(arr); // [1, 2, 3]
+```
+
+---
+
+### **11. `at(index)`**
+👉 Returns the element at a specific index (supports negative indexing).
+
+```js
+let arr = [10, 20, 30];
+console.log(arr.at(-1)); // 30
+```
+
+---
+
+### **12. `indexOf(value)`**
+👉 Returns the index of the first occurrence of a value.
+
+```js
+let arr = [10, 20, 30, 20];
+console.log(arr.indexOf(20)); // 1
+```
+
+---
+
+### **13. `toString()`**
+👉 Converts an array to a comma-separated string.
+
+```js
+let arr = [1, 2, 3];
+console.log(arr.toString()); // "1,2,3"
+```
+
+---
+
+### **14. `reverse()`**
+👉 Reverses the order of elements in an array.
+
+```js
+let arr = [1, 2, 3];
+console.log(arr.reverse()); // [3, 2, 1]
+```
+
+---
+
+### **15. `length`**
+👉 Returns the number of elements in an array.
+
+```js
+let arr = [1, 2, 3, 4];
+console.log(arr.length); // 4
+```
+
+---
+
+Let me know if you need more details! 🚀
